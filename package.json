@@ -1,15 +1,15 @@
 {
-  "name": "satelize",
+  "name": "geo-ip",
   "description": "Get location details (latitude, longitude...) from IP visitor, server side NodeJS module",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": {
-    "name": "Julien Valéry",
-    "email": "darul75@gmail.com"
+    "name": "Pablo Varela",
+    "email": "pablovarela182@gmail.com"
   },
-  "homepage": "https://github.com/darul75/satelize",
+  "homepage": "https://github.com/pablopunk/geo-ip",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darul75/satelize.git"
+    "url": "https://github.com/pablopunk/geo-ip.git"
   },
   "keywords": [
     "ip",
@@ -19,7 +19,7 @@
     "nodejs",
     "telize"
   ],
-  "main": "./src/satelize",
+  "main": "./src/index.js",
   "scripts": {
     "test": "mocha test/*.js"
   },
@@ -27,6 +27,7 @@
     "node": ">=0.8.x"
   },
   "dependencies": {
+    "auto-bind": "^1.2.0",
     "maxmind-db-reader": "^0.2.1"
   },
   "devDependencies": {
@@ -35,7 +36,7 @@
     "mocha": "^2.3.4"
   },
   "bugs": {
-    "url": "https://github.com/darul75/satelize/issues"
+    "url": "https://github.com/pablopunk/geo-ip/issues"
   },
   "readmeFilename": "README.md",
   "license": "MIT"

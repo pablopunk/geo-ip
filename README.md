@@ -1,51 +1,26 @@
-# Satelize [![NPM version](https://badge.fury.io/js/satelize.png)](http://badge.fury.io/js/satelize) [![Build Status](https://travis-ci.org/darul75/satelize.png?branch=master)](https://travis-ci.org/darul75/satelize)
-
-**Satelize** NodeJS module to retrieve user location information based on IP, combined with expressjs for instance make life easier to get some stuff as latitude/longitude of your visitor.
-
-Inspired and using http://www.telize.com/ service. ~~Free today~~.
-
-As API is not free anymore, it uses a small dataset (provided by maxmind) to fetch information about IP requested, it won't work for all cases.
-
-## Why ?
-
-Because ecchymose in the nose. I needed something but on server side.
-
-With expressjs for instance, you can get your request IP, then just need to use this library that will make the call to get user location data.
-
-And it is done.
-
-## Demo
-
-http://darul-demo.herokuapp.com/satelize
-
-// need to be updated with new version
+# geo-ip [Build Status](https://travis-ci.org/pablopunk/geo-ip.png?branch=master)](https://travis-ci.org/pablopunk/geo-ip)
 
 ## Install
 
-~~~
-npm install satelize
-~~~
+```sh
+npm install geo-ip
+```
 
 ## Usage
 
 ```javascript
-var satelize = require('satelize');
+const geoIp = require('geo-ip');
 
 // Example retrieve IP from request
-// var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
+// const ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
 
-// then satelize call
-
-satelize.satelize({ip:'46.19.37.108'}, function(err, payload) {
-  // if used with expressjs
-  // res.send(payload);
-  // res.json...
+const result = geoIp({ip:'46.19.37.108'})
 });
 ```
 
 ## Return
 
-~~~ json
+```json
 {
     "ip": "46.19.37.108",
     "continent_code": "EU",
@@ -62,7 +37,7 @@ satelize.satelize({ip:'46.19.37.108'}, function(err, payload) {
     "longitude": 5.75,
     "timezone":"Europe/Amsterdam"
 }
-~~~
+```
 
 Details
 
@@ -80,16 +55,9 @@ Details
 - **ip** : IPV4 better.
 - **timeout** : default 1000ms
 
-## Release
-
-- 0.2.0: api not free anymore, use of DB instead
-- 0.1.2: fix timeout duplicate callback call
-
-## Metrics
-
-[![NPM](https://nodei.co/npm/satelize.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/satelize/)
-
 ## License
+
+> Forked from [darul75/satelize](https://github.com/darul75/satelize)
 
 The MIT License (MIT)
 
