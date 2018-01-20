@@ -52,7 +52,6 @@ Details
 ## Options
 
 - **ip** : IPV4 better.
-- **timeout** : default 1000ms
 
 ## License
 
