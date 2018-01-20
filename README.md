@@ -15,7 +15,6 @@ const geoIp = require('@pablopunk/geo-ip');
 // const ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
 
 const result = geoIp({ip:'46.19.37.108'})
-});
 ```
 
 ## Return
