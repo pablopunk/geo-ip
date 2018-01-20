@@ -3,13 +3,13 @@
 ## Install
 
 ```sh
-npm install geo-ip
+npm install @pablopunk/geo-ip
 ```
 
 ## Usage
 
 ```javascript
-const geoIp = require('geo-ip');
+const geoIp = require('@pablopunk/geo-ip');
 
 // Example retrieve IP from request
 // const ip = req.header('x-forwarded-for') || req.connection.remoteAddress;

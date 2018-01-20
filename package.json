@@ -1,5 +1,5 @@
 {
-  "name": "geo-ip",
+  "name": "@pablopunk/geo-ip",
   "description": "Get location details (latitude, longitude...) from IP visitor, server side NodeJS module",
   "version": "1.0.0",
   "author": {
