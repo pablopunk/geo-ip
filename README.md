@@ -1,4 +1,4 @@
-# geo-ip [Build Status](https://travis-ci.org/pablopunk/geo-ip.png?branch=master)](https://travis-ci.org/pablopunk/geo-ip)
+# geo-ip [![Build Status](https://travis-ci.org/pablopunk/geo-ip.png?branch=master)](https://travis-ci.org/pablopunk/geo-ip)
 
 ## Install
 
