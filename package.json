@@ -1,7 +1,7 @@
 {
   "name": "@pablopunk/geo-ip",
   "description": "Get location details (latitude, longitude...) from IP visitor, server side NodeJS module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Pablo Varela",
     "email": "pablovarela182@gmail.com"
